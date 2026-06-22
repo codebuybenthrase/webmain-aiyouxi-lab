@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>米兰体育 | 杂志专题</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fafaf9;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e1e1e;
+      line-height: 1.75;
+      padding: 0 1.5rem 3rem;
+    }
+
+    .page-frame {
+      max-width: 640px;
+      margin: 0 auto;
+      padding-top: 2.2rem;
+    }
+
+    /* 杂志风格 hero 区域 */
+    .hero {
+      margin-bottom: 2.8rem;
+    }
+
+    .hero__tag {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #8c8c8c;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero__title {
+      font-size: 2.8rem;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero__sub {
+      font-size: 1.1rem;
+      color: #5b5b5b;
+      max-width: 480px;
+      border-left: 3px solid #d4d4d4;
+      padding-left: 1rem;
+      font-weight: 340;
+    }
+
+    /* 背景说明 - 类似杂志的 pull quote 或 letter */
+    .background-note {
+      background: #f3f2ee;
+      padding: 1.6rem 1.8rem;
+      margin-bottom: 2.8rem;
+      border-radius: 2px;
+      font-size: 1rem;
+      color: #2a2a2a;
+      border-left: 4px solid #b0ad9c;
+    }
+
+    .background-note strong {
+      font-weight: 560;
+    }
+
+    /* 三段式自然介绍 */
+    .intro-block {
+      margin-bottom: 2.4rem;
+    }
+
+    .intro-block h2 {
+      font-size: 1.5rem;
+      font-weight: 450;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.6rem;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 0.3rem;
+    }
+
+    .intro-block p {
+      margin-bottom: 1.1rem;
+      font-size: 1rem;
+      color: #2b2b2b;
+    }
+
+    .intro-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .inset-link {
+      color: #1f1f1f;
+      text-decoration: none;
+      border-bottom: 1px solid #b9b9b9;
+      transition: border-color 0.15s;
+      font-weight: 420;
+    }
+
+    .inset-link:hover {
+      border-bottom: 1px solid #1f1f1f;
+    }
+
+    /* 分隔装饰 */
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: #cacaca;
+      margin: 2.2rem 0 2rem;
+    }
+
+    /* FAQ 摘要 / 小元素 */
+    .faq-note {
+      background: #ffffff;
+      border: 1px solid #e2e2e2;
+      padding: 1.2rem 1.6rem;
+      margin-bottom: 2.2rem;
+      border-radius: 0;
+      font-size: 0.95rem;
+      color: #3a3a3a;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    }
+
+    .faq-note summary {
+      cursor: default;
+      font-weight: 450;
+      color: #1f1f1f;
+      margin-bottom: 0.4rem;
+    }
+
+    .faq-note p {
+      margin-top: 0.3rem;
+    }
+
+    /* 页尾访问提示 — 窄且干净 */
+    .footer-hint {
+      margin-top: 3.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #d5d5d5;
+      font-size: 0.92rem;
+      color: #4d4d4d;
+      line-height: 1.6;
+    }
+
+    .footer-hint a {
+      color: #1f1f1f;
+      text-decoration: none;
+      border-bottom: 1px solid #a5a5a5;
+      transition: border-color 0.15s;
+    }
+
+    .footer-hint a:hover {
+      border-bottom: 1px solid #1f1f1f;
+    }
+
+    /* 响应式微调 */
+    @media (max-width: 480px) {
+      .hero__title {
+        font-size: 2.1rem;
+      }
+      .hero__sub {
+        font-size: 1rem;
+      }
+      .background-note {
+        padding: 1.2rem;
+      }
+      body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page-frame">
+
+  <!-- 首页横幅 / 杂志刊头 -->
+  <header class="hero">
+    <div class="hero__tag">专题 · 稳定入口</div>
+    <h1 class="hero__title">米兰体育<br>在于持续的在场</h1>
+    <div class="hero__sub">一个关于信息路径、页面结构以及如何自然地抵达的观察笔记</div>
+  </header>
+
+  <!-- 背景说明 — 杂志式注脚/引言 -->
+  <div class="background-note">
+    <strong>为什么谈入口？</strong> 在信息过载的间隙，一个清晰、克制的页面往往比纷繁的导航更让人安定。 
+    <span style="color:#5f5f5f;">米兰体育</span> 所呈现的，正是这种对“稳定抵达”的关注——
+    不堆砌，不催促，页面本身即是媒介。
+  </div>
+
+  <!-- 第一段自然介绍：从结构说起 -->
+  <section class="intro-block">
+    <h2>作为起点的页面</h2>
+    <p>
+      任何网站的第一功能都不是说服，而是<strong>存在</strong>。当用户打开 
+      <a href="https://cn-official-milansport.com" class="inset-link">米兰体育</a> 
+      的首页，首先感知到的应是节奏与留白——标题的层级、段落的间隔、以及一种没有压迫感的浏览顺序。
+      这不是巧合，而是对阅读习惯的回应：人们倾向于在干净的空间里建立信任。
+    </p>
+    <p>
+      从杂志设计的角度看，窄正文宽度（约640px）迫使内容聚焦，减少视线游移。 
+      每一段都不必太长，但彼此承接：先有背景，再有展开，最后落回一个自然的落脚点。
+    </p>
+  </section>
+
+  <!-- 第二段：场景和特点融合 -->
+  <section class="intro-block">
+    <h2>特点与场景</h2>
+    <p>
+      无论你是在移动端快速浏览，还是在桌面端仔细阅读，米兰体育的页面都保持了克制的一致性。 
+      字体、间距、色彩都服务于一个目的：让信息自己说话。没有弹窗干扰，没有夸张的标语，
+      只有经过组织的文字和必要的链接。
+    </p>
+    <p>
+      这种风格适合那些不希望被“引导”的用户——他们更倾向于自己判断。 
+      而一个稳定、可预期的入口，就是最好的邀请。
+    </p>
+  </section>
+
+  <div class="divider" role="separator" aria-hidden="true"></div>
+
+  <!-- 第三段：FAQ 摘要 / 小问答作为自然的收束 -->
+  <section class="faq-note">
+    <summary style="list-style:none; display:block; font-weight:460; margin-bottom:0.25rem;">❖ 常见疑问摘要</summary>
+    <p><strong>问：</strong> 为什么页面强调“稳定入口”？<br>
+    <strong>答：</strong> 因为一个可靠的访问路径能降低认知负荷。当链接的文本直接对应品牌名，用户不需要猜测下一步。这也是将 
+    <a href="https://cn-official-milansport.com" class="inset-link">米兰体育</a> 以自然方式嵌入句子的原因——它本身就是内容的一部分，而非外挂的按钮。</p>
+    <p style="margin-top:0.6rem;"><strong>问：</strong> 页面内容会频繁变化吗？<br>
+    <strong>答：</strong> 结构保持稳定，但文字会随专题方向调整。每一次更新都遵循相同的留白与层级原则。</p>
+  </section>
+
+  <!-- 页尾访问提示 — 不含“进入/点击”等词，自然收尾 -->
+  <footer class="footer-hint">
+    如果你对上述内容所依托的平台感兴趣，可以通过 
+    <a href="https://cn-official-milansport.com">米兰体育</a> 
+    找到更多背景与结构一致的信息。本页作为专题介绍，侧重说明页面设计的意图与阅读节奏。
+    <span style="display:inline-block; margin-top:0.6rem; color:#8a8a8a;">— 杂志式索引 · 第〇一期</span>
+  </footer>
+
+</div>
+</body>
+</html>
